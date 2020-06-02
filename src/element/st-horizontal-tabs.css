@@ -1,0 +1,49 @@
+:host {
+    display: block;
+  }
+
+  ::placeholder {
+      color: gray;
+  }
+
+  .phone {
+      &_title {
+          width: 500px;
+          @media (max-width: 500px) {
+              width: auto;
+          }
+          body.is_dark & {
+              color: white;
+          }
+      }
+      
+      img {
+          display: block;
+      }
+  }   
+
+  .st-horizontal-tabs {
+    position: relative;
+    display: flex;
+    width: 100%;
+    list-style: none;
+ }
+ 
+ .tab {
+    display: inline-block;
+    text-align: center;
+    box-sizing: border-box;
+    line-height: 1;
+    padding: 0 30px 7px 30px;
+    margin-top: auto;
+    cursor: pointer;
+ }
+
+.tab--active {
+  padding-bottom: 5px;
+}
+ 
+.line {
+    display: block;
+    transition: .4s ease-in-out 0s;
+}
